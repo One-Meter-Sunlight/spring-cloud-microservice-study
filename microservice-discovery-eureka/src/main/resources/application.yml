@@ -1,0 +1,25 @@
+####### 单点配置
+#server:
+  #port: 8761
+
+#eureka 服务注册中心配置
+#eureka:
+  #instance:
+    #hostname: discovery
+  #client:
+    #register-with-eureka: false
+    #fetch-registry: false
+    #service-url:
+      #defaultZone : http://127.0.0.1:9991/eureka/
+
+####### 高可用
+spring:
+  profiles: peer1
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: peer1
+client:
+  service-url:
+    defaultZone : http://peer2:8762/eureka/
