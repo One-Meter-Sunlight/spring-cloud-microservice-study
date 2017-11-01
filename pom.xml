@@ -12,6 +12,10 @@
     <modules>
         <!--服务注册和发现-->
         <module>microservice-discovery-eureka</module>
+        <!--服务提供者-->
+        <module>microservice-provider-user</module>
+        <!--负载均衡-->
+        <module>microservice-consumer-movie-ribbon</module>
     </modules>
 
     <!--spring boot 配置-->
