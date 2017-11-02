@@ -16,6 +16,7 @@
         <module>microservice-provider-user</module>
         <!--负载均衡-->
         <module>microservice-consumer-movie-ribbon</module>
+        <module>microservice-consumer-movie-feign</module>
     </modules>
 
     <!--spring boot 配置-->
